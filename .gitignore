@@ -1,0 +1,25 @@
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Raw and generated data are reproducible from the official sources.
+data/raw/**
+data/interim/**
+data/processed/**
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Tableau local files and extracts
+tableau/*.hyper
+tableau/*.twb
+tableau/*.twbx
+
+# Local configuration
+config/source_paths.json
+
+# Site build output
+site/_site/

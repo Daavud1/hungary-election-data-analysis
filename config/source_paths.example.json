@@ -1,0 +1,10 @@
+{
+  "historical_archive_dir": "C:/Users/User/Desktop/data p1/valasztasi_eredmenyek_1990-2024/valasztasi_eredmenyek_1990-2024",
+  "voter_snapshot_2026_10_19": "C:/Users/User/Desktop/data p1/oevk-valasztopolgarok_20261019.csv",
+  "party_lists_2026_10_19": "C:/Users/User/Desktop/data p1/partlistak_20261019.csv",
+  "geojson_2026": "C:/Users/User/Downloads/egyeni_valasztokeruletek_2026.geojson",
+  "turnout_2026": "C:/Users/User/Downloads/19_órás_részvétel_számlálás_helye_szerint_20260421.xlsx",
+  "postal_votes_2026": "C:/Users/User/Downloads/levelben_szavazas_eredmenyei_2026.xls",
+  "individual_polling_results_2026": "C:/Users/User/Downloads/Varmegye_OEVK_EGYENI_szavazokori_eredmenyek_2026.zip",
+  "list_polling_results_2026": "C:/Users/User/Downloads/Varmegye_Listás_szavazokori_eredmenyek_2026.zip"
+}
