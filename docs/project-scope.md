@@ -22,6 +22,12 @@ Create a reproducible academic data-analysis portfolio project using official Hu
 4. Public GitHub repository with a readable README.
 5. GitHub Pages project website embedding or linking the Tableau dashboard.
 
+## Current data status
+
+- National party-list results: 1990–2026 complete for the registered party lists in each official national result.
+- Final national turnout: 1990–2022 complete.
+- 2026 turnout: the supplied workbook reports 19:00 participation rather than final participation, so it is retained for later intraday analysis and excluded from the final-turnout trend.
+
 ## Non-goals for version 1
 
 - Causal claims about voter behaviour.
