@@ -26,6 +26,7 @@ Create a reproducible academic data-analysis portfolio project using official Hu
 
 - National party-list results: 1990–2026 complete for the registered party lists in each official national result.
 - Final national turnout: 1990–2022 complete.
+- County-level shares for FIDESZ-KDNP, MKKP, and Mi Hazánk: comparable 2022–2026 table complete. Other 2022 opposition parties stood on a joint list, so they are not presented as direct party-to-party swings.
 - 2026 turnout: the supplied workbook reports 19:00 participation rather than final participation, so it is retained for later intraday analysis and excluded from the final-turnout trend.
 
 ## Non-goals for version 1
