@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hungary Election Data Analysis</title>
+  <meta name="description" content="A reproducible portfolio analysis of Hungarian parliamentary election results, 1990–2026.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">DATA ANALYSIS PORTFOLIO · 1990–2026</p>
+      <h1>Hungary election data analysis</h1>
+      <p class="lead">A reproducible exploration of turnout, party-list support, electoral geography, and constituency competitiveness using official results from Hungary’s National Election Office (NVI).</p>
+      <div class="links">
+        <a href="https://github.com/Daavud1/hungary-election-data-analysis">View source code</a>
+        <a href="https://www.valasztas.hu/" rel="noreferrer">Official NVI source</a>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Project coverage">
+      <article><strong>9</strong><span>final turnout observations</span></article>
+      <article><strong>1990–2026</strong><span>national party-list series</span></article>
+      <article><strong>424</strong><span>constituency-year margins</span></article>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">QUESTION 1</p>
+      <h2>How did national parliamentary turnout change?</h2>
+      <p>Turnout ranged from <strong>56.3%</strong> in 1998 to <strong>70.5%</strong> in 2002. It recovered to about 70% in 2018 and 2022 after declining through the 2010s.</p>
+      <div class="chart-wrap"><canvas id="turnoutChart" aria-label="Line chart of Hungarian parliamentary turnout from 1990 to 2022"></canvas></div>
+      <p class="note">Final national parliamentary turnout only. The supplied 2026 turnout file is a 19:00 snapshot, so it is intentionally excluded from this comparison.</p>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <p class="eyebrow">QUESTION 2</p>
+        <h2>What changed in 2026?</h2>
+        <p>In the provided 2026 national party-list results, TISZA received <strong>53.5%</strong> and FIDESZ–KDNP <strong>38.9%</strong>. The opposition list in 2022 was a coalition, so it is not treated as directly comparable to a single 2026 party.</p>
+        <div class="chart-wrap compact"><canvas id="partyChart" aria-label="Bar chart of 2026 party-list vote shares"></canvas></div>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">QUESTION 3</p>
+        <h2>Where did support shift?</h2>
+        <p>For the three lists present in both years, FIDESZ–KDNP’s share declined in every county between 2022 and 2026. The change ranged from <strong>−12.5</strong> to <strong>−18.9 percentage points</strong>.</p>
+        <p class="note">This is a within-party comparison using the full party-list vote denominator. It does not imply that votes transferred to any particular opponent.</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">QUESTION 4</p>
+      <h2>How competitive were individual constituencies?</h2>
+      <p>The project calculates the winner’s margin over the runner-up for all 106 individual constituencies in 2014, 2018, 2022, and 2026. This makes close races visible without confusing vote totals with vote-share margins.</p>
+      <div class="chart-wrap"><canvas id="marginChart" aria-label="Bar chart of average constituency winning margin by election year"></canvas></div>
+    </section>
+
+    <section class="panel method">
+      <p class="eyebrow">METHOD</p>
+      <h2>How this project is built</h2>
+      <ol>
+        <li>Official ZIP, CSV, XLS, and XLSX election releases are read without altering the originals.</li>
+        <li>Python cleaning scripts standardise the historical and 2026 tables, then validate totals against the published national lists.</li>
+        <li>Jupyter notebooks document analysis; Tableau-ready CSV files support a companion dashboard.</li>
+        <li>The repository excludes raw files and generated data where redistribution is not appropriate; every result can be reproduced from documented sources.</li>
+      </ol>
+      <p><a href="../docs/data-sources.md">Read data-source notes</a> · <a href="../docs/project-scope.md">Read project scope</a></p>
+    </section>
+  </main>
+  <footer>Built by Daavud Soorbekov · Data: National Election Office of Hungary (NVI)</footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

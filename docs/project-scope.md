@@ -18,7 +18,7 @@ Create a reproducible academic data-analysis portfolio project using official Hu
 
 1. Clean, documented Tableau-ready data tables.
 2. Reproducible Jupyter notebooks for inventory, cleaning, validation, and analysis.
-3. Tableau Public dashboard.
+3. GitHub Pages portfolio dashboard, plus Tableau-ready tables and a companion Tableau workbook when the Tableau publication session is available.
 4. Public GitHub repository with a readable README.
 5. GitHub Pages project website embedding or linking the Tableau dashboard.
 
